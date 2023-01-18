@@ -42,10 +42,12 @@ end
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Add this line to your application's Gemfile, probably in the `:test` group:
 
 ```ruby
-gem 'dememoize'
+group :test do
+  gem "dememoize"
+end
 ```
 
 ## Simple usage
