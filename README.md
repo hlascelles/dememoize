@@ -5,13 +5,13 @@ dememoize
 
 ## Description
 
-`dememoize` is a gem that provides a method to remove a memoized value (an instance variable) from a
+`dememoize` is a gem that provides a way to remove a memoized value (an instance variable) from a
 class or an object instance.
 
 The primary use case is usage in spec tests. If you have a code that memoizes a value, but you
 would like to check that the value is calculated differently under different circumstances, you can
 use `dememoize` to remove the memoized value, leaving you free to add another spec that can check
-the value again.
+the value again. There are rspec shared contexts that can help you with this.
 
 eg:
 
