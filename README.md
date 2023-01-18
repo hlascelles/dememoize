@@ -1,7 +1,7 @@
 dememoize
 =========
 
-[![Gem Version](https://badge.fury.io/rb/dememoize.svg)](https://badge.fury.io/rb/dememoize)
+[![Gem Version](https://img.shields.io/gem/v/dememoize?color=green)](https://img.shields.io/gem/v/dememoize?color=green)
 
 ## Description
 
