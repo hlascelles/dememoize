@@ -113,7 +113,7 @@ end
 # first argument to dememoized.
 
 describe "specify a different class (Bar) to dememoize" do
-  include_context "with dememoized class variable", :@categories, Bar # <-- Bar is the class
+  include_context "with dememoized class variable", :@categories, clazz: Bar # <-- Bar is the class
   # ...
 end
 ```
