@@ -2,7 +2,7 @@ dememoize
 =========
 
 [![Gem Version](https://img.shields.io/gem/v/dememoize?color=green)](https://rubygems.org/gems/dememoize)
-![specs workflow](https://github.com/hlascelles/dememoize/actions/workflows/specs.yml/badge.svg)
+[![specs workflow](https://github.com/hlascelles/dememoize/actions/workflows/specs.yml/badge.svg)](https://github.com/hlascelles/dememoize/actions)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
