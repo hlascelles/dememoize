@@ -38,7 +38,7 @@ describe Dememoize do
 
     it "doesn't error if the instance variable doesn't exist" do
       expect { described_class.dememoize(instance, :@qux) }.not_to raise_error
-      expect(instance.instance_variables).to match_array [:@bar, :@baz, :@foo]
+      expect(instance.instance_variables).to match_array %i[@bar @baz @foo]
     end
   end
 
