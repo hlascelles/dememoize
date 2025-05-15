@@ -29,15 +29,5 @@ Gem::Specification.new do |spec|
 
   spec.files = Dir["{lib}/**/*"] + ["README.md"]
   spec.require_paths = ["lib"]
-  spec.required_ruby_version = ">= 3.0"
-
-  spec.add_development_dependency "fasterer"
-  spec.add_development_dependency "pry-byebug"
-  spec.add_development_dependency "rake"
-  spec.add_development_dependency "reek"
-  spec.add_development_dependency "rspec"
-  spec.add_development_dependency "rubocop"
-  spec.add_development_dependency "rubocop-rake"
-  spec.add_development_dependency "rubocop-rspec"
   # rubocop:enable Layout/HashAlignment
 end
