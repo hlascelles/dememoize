@@ -70,3 +70,4 @@ _site
 .sass-cache
 .jekyll-metadata
 /log
+.rspec_status
