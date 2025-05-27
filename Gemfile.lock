@@ -137,8 +137,6 @@ GEM
     rubocop-rspec (3.6.0)
       lint_roller (~> 1.1)
       rubocop (~> 1.72, >= 1.72.1)
-    rubocop-sorbet (0.10.0)
-      rubocop (>= 1)
     rubocop-thread_safety (0.7.2)
       lint_roller (~> 1.1)
       rubocop (~> 1.72, >= 1.72.1)
@@ -172,7 +170,6 @@ DEPENDENCIES
   rubocop-rails
   rubocop-rake (> 0.7.0)
   rubocop-rspec (> 3.5.0)
-  rubocop-sorbet
   rubocop-thread_safety
 
 BUNDLED WITH
