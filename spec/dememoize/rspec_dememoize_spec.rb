@@ -14,7 +14,6 @@ some_instance = SomeTestClass.new
 
 # rubocop:disable RSpec/BeforeAfterAll
 # rubocop:disable RSpec/DescribeClass
-# rubocop:disable RSpec/ExpectInHook
 describe "rspec_dememoize" do
   context "when with dememoized class variable" do
     describe SomeTestClass do
@@ -69,6 +68,5 @@ describe "rspec_dememoize" do
     end
   end
 end
-# rubocop:enable RSpec/ExpectInHook
 # rubocop:enable RSpec/DescribeClass
 # rubocop:enable RSpec/BeforeAfterAll
