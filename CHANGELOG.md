@@ -1,3 +1,7 @@
+## 0.1.2 (2025-06-03)
+
+- Added trusted publishing [#28](https://github.com/hlascelles/dememoize/pull/28)
+
 ## 0.1.1 (2024-05-11)
 
 - Add tests for ruby 3.3 [#7](https://github.com/hlascelles/dememoize/pull/7)
