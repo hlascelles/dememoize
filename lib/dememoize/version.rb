@@ -1,5 +1,5 @@
 # frozen_string_literal: true
 
 module Dememoize
-  VERSION = "0.1.2" # Comment to remove
+  VERSION = "0.1.3"
 end
