@@ -6,8 +6,10 @@ gemspec
 
 group :development, :test do
   gem "fasterer"
+  gem "irb"
   gem "pry-byebug"
   gem "rake"
+  gem "readline" # for pry-byebug https://github.com/deivid-rodriguez/pry-byebug/issues/460
   gem "reek"
   gem "rspec"
   gem "rubocop"

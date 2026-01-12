@@ -10,7 +10,7 @@ class SomeOtherTestClass
 end
 # rubocop:enable Lint/EmptyClass
 
-some_instance = SomeTestClass.new
+SOME_INSTANCE = SomeTestClass.new
 
 # rubocop:disable RSpec/BeforeAfterAll
 # rubocop:disable RSpec/DescribeClass
@@ -52,19 +52,19 @@ describe "rspec_dememoize" do
   end
 
   context "when with dememoized variable" do
-    include_context "with dememoized variable", :@foo, object: some_instance
+    include_context "with dememoized variable", :@foo, object: SOME_INSTANCE
 
     before(:each) do
-      expect(some_instance.instance_variable_defined?(:@foo)).to be false
+      expect(SOME_INSTANCE.instance_variable_defined?(:@foo)).to be false
     end
 
     after(:all) do # Must be after all to allow cleanup to happen
-      expect(some_instance.instance_variable_defined?(:@foo)).to be false
+      expect(SOME_INSTANCE.instance_variable_defined?(:@foo)).to be false
     end
 
     it "removes the instance variable after the example" do
-      some_instance.instance_variable_set(:@foo, "hello")
-      expect(some_instance.instance_variable_defined?(:@foo)).to be true
+      SOME_INSTANCE.instance_variable_set(:@foo, "hello")
+      expect(SOME_INSTANCE.instance_variable_defined?(:@foo)).to be true
     end
   end
 end
