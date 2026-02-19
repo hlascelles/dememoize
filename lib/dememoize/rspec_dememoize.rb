@@ -14,19 +14,19 @@ module RSpec
   end
 end
 
-RSpec.shared_context "with dememoized variable" do |name, object:|
+RSpec.shared_context "with dememoized variable" do |*names, object:|
   around(:each) do |example|
-    Dememoize.remove_instance_variable_if_defined(object, name)
+    names.each { |name| Dememoize.remove_instance_variable_if_defined(object, name) }
     example.run
-    Dememoize.remove_instance_variable_if_defined(object, name)
+    names.each { |name| Dememoize.remove_instance_variable_if_defined(object, name) }
   end
 end
 
-RSpec.shared_context "with dememoized class variable" do |name, clazz: described_class|
+RSpec.shared_context "with dememoized class variable" do |*names, clazz: described_class|
   around(:each) do |example|
-    Dememoize.remove_instance_variable_if_defined(clazz, name)
+    names.each { |name| Dememoize.remove_instance_variable_if_defined(clazz, name) }
     example.run
-    Dememoize.remove_instance_variable_if_defined(clazz, name)
+    names.each { |name| Dememoize.remove_instance_variable_if_defined(clazz, name) }
   end
 end
 

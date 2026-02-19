@@ -67,6 +67,27 @@ describe "rspec_dememoize" do
       expect(SOME_INSTANCE.instance_variable_defined?(:@foo)).to be true
     end
   end
+
+  context "when with multiple dememoized variables" do
+    include_context "with dememoized class variable", :@foo, :@bar, clazz: SomeTestClass
+
+    before(:each) do
+      expect(SomeTestClass.instance_variable_defined?(:@foo)).to be false
+      expect(SomeTestClass.instance_variable_defined?(:@bar)).to be false
+    end
+
+    after(:all) do
+      expect(SomeTestClass.instance_variable_defined?(:@foo)).to be false
+      expect(SomeTestClass.instance_variable_defined?(:@bar)).to be false
+    end
+
+    it "removes multiple instance variables after the example" do
+      SomeTestClass.instance_variable_set(:@foo, "hello")
+      SomeTestClass.instance_variable_set(:@bar, "world")
+      expect(SomeTestClass.instance_variable_defined?(:@foo)).to be true
+      expect(SomeTestClass.instance_variable_defined?(:@bar)).to be true
+    end
+  end
 end
 # rubocop:enable RSpec/DescribeClass
 # rubocop:enable RSpec/BeforeAfterAll
