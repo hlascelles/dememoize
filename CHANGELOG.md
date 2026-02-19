@@ -1,3 +1,7 @@
+## 0.2.0 (2026-02-19)
+
+- Allow dememoizing multiple variables [#58](https://github.com/hlascelles/dememoize/pull/58)
+
 ## 0.1.2 (2025-06-03)
 
 - Added trusted publishing [#28](https://github.com/hlascelles/dememoize/pull/28)

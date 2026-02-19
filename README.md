@@ -111,6 +111,12 @@ describe "without specifying a class it uses described_class" do
   end
 end
 
+# You can also dememoize multiple variables at once:
+describe "dememoizing multiple variables" do
+  include_context "with dememoized class variable", :@categories, :@brands
+  # ...
+end
+
 # If you want to dememoize a class variable on a different class, you can pass the class as the
 # first argument to dememoized.
 
